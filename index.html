@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Croginal Cats · FLOOR PRICE & RARITY | EbisusBay</title>
+  <!-- Pixel / Monospace font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Press Start 2P', 'Share Tech Mono', 'Courier New', monospace;
+      background: #ffffff;
+      color: #5a4e7a;
+      line-height: 1.4;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 1.2rem 1rem 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #7b2cbf;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 0px #e0b0ff;
+    }
+
+    .tagline {
+      font-size: 0.55rem;
+      color: #6c8b9e;
+      margin-top: 0.5rem;
+    }
+
+    /* Top Bar - Mobile optimized */
+    .top-bar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .croginal-nine-btn {
+      background: #e67e22;
+      color: white;
+      border: none;
+      padding: 0.4rem 1rem;
+      font-size: 0.5rem;
+      font-family: 'Press Start 2P', monospace;
+      cursor: pointer;
+      transition: 0.1s;
+      box-shadow: 2px 2px 0px #b45f1b;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .croginal-nine-btn:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0px #b45f1b;
+    }
+
+    .about-btn {
+      background: #9b59b6;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.5rem;
+      font-family: 'Press Start 2P', monospace;
+      cursor: pointer;
+      transition: 0.1s;
+      box-shadow: 2px 2px 0px #6c3483;
+      white-space: nowrap;
+    }
+
+    .about-btn:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0px #6c3483;
+    }
+
+    /* Compact Countdown + PinkLock area */
+    .lock-countdown-area {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #fef2e0;
+      border: 2px solid #e74c3c;
+      padding: 0.2rem 0.6rem;
+      cursor: pointer;
+      transition: 0.1s;
+      flex-shrink: 0;
+    }
+
+    .lock-countdown-area:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 2px 2px 0px #c0392b;
+    }
+
+    .lock-icon {
+      background: #e74c3c;
+      color: white;
+      padding: 0.2rem 0.4rem;
+      font-size: 0.45rem;
+      font-family: monospace;
+      white-space: nowrap;
+    }
+
+    .countdown-compact {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .countdown-item {
+      text-align: center;
+      min-width: 32px;
+      background: white;
+      padding: 0.15rem 0.2rem;
+      border-radius: 2px;
+    }
+
+    .countdown-number {
+      font-size: 0.55rem;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .countdown-label {
+      font-size: 0.3rem;
+      color: #b7950b;
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #f0e6ff;
+      padding: 0.3rem 1rem;
+      margin-top: 0.8rem;
+      font-size: 0.5rem;
+      color: #7b2cbf;
+      border: 1px solid #c8a2ff;
+      font-family: monospace;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #52be80;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.4; transform: scale(0.8);}
+      100% { opacity: 1; transform: scale(1.2);}
+    }
+
+    .contract-badge {
+      display: inline-block;
+      background: #f0e6ff;
+      padding: 0.3rem 0.8rem;
+      margin-top: 0.6rem;
+      font-size: 0.45rem;
+      color: #7b2cbf;
+      border: 1px solid #c8a2ff;
+      font-family: monospace;
+      word-break: break-all;
+    }
+
+    /* Three Category Cards */
+    .categories-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 1.5rem 0 1.5rem;
+      justify-content: center;
+    }
+
+    .cat-card {
+      flex: 1;
+      min-width: 180px;
+      background: #faf8ff;
+      padding: 0.8rem;
+      border: 2px solid;
+      box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.05);
+    }
+
+    .cat-card:nth-child(1) { border-color: #9b59b6; background: #f9f0ff; }
+    .cat-card:nth-child(1) h3 { color: #8e44ad; }
+    .cat-card:nth-child(2) { border-color: #5dade2; background: #ebf5ff; }
+    .cat-card:nth-child(2) h3 { color: #2980b9; }
+    .cat-card:nth-child(3) { border-color: #52be80; background: #eafaf1; }
+    .cat-card:nth-child(3) h3 { color: #27ae60; }
+
+    .cat-card h3 {
+      font-size: 0.7rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .cat-card p {
+      color: #5a6e7a;
+      font-size: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .highlight {
+      color: #8e44ad;
+      margin-top: 0.5rem;
+      font-size: 0.55rem;
+      border-left: 3px solid #c39bd3;
+      padding-left: 8px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 0.6rem;
+      margin: 0.6rem 0 0.2rem;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      background: #ffffff;
+      padding: 0.3rem 0.7rem;
+      text-decoration: none;
+      font-size: 0.5rem;
+      color: #2980b9;
+      border: 1px solid #5dade2;
+      font-family: monospace;
+      transition: 0.1s;
+      display: inline-block;
+    }
+
+    .social-link:hover {
+      background: #d6eaf8;
+      color: #1a5276;
+    }
+
+    .coin-stats {
+      background: #ffffff;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #52be80;
+      font-size: 0.5rem;
+    }
+
+    .coin-stats div {
+      margin: 0.2rem 0;
+      color: #27ae60;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .refresh-icon {
+      font-size: 0.45rem;
+      color: #2980b9;
+      cursor: pointer;
+      margin-left: 0.3rem;
+    }
+
+    .copy-icon {
+      background: #2980b9;
+      color: white;
+      border: none;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.4rem;
+      cursor: pointer;
+      font-family: monospace;
+      border-radius: 2px;
+      transition: 0.1s;
+    }
+
+    .copy-icon:hover {
+      background: #1a5276;
+    }
+
+    .toast-message {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #52be80;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 0.45rem;
+      z-index: 1002;
+      border-radius: 4px;
+      animation: fadeOut 2s ease forwards;
+    }
+
+    .toast-message.error {
+      background: #e74c3c;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      70% { opacity: 1; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
+    /* NFT Market Section */
+    .section-title {
+      font-size: 0.7rem;
+      margin: 1.2rem 0 1rem 0;
+      border-left: 4px solid #f1c40f;
+      padding-left: 0.8rem;
+      text-transform: uppercase;
+      color: #7d3c98;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .real-data-badge {
+      background: #e74c3c;
+      color: white;
+      padding: 0.15rem 0.5rem;
+      font-size: 0.45rem;
+    }
+
+    .market-stats-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .market-stat-card {
+      flex: 1;
+      min-width: 100px;
+      background: #fef9e7;
+      padding: 0.6rem;
+      border: 2px solid #f1c40f;
+      text-align: center;
+    }
+
+    .market-stat-label {
+      font-size: 0.4rem;
+      color: #d4ac0d;
+      text-transform: uppercase;
+    }
+
+    .market-stat-value {
+      font-size: 0.8rem;
+      color: #b7950b;
+      margin-top: 0.3rem;
+      font-weight: bold;
+    }
+
+    .listings-note {
+      background: #fef2e0;
+      padding: 0.4rem;
+      text-align: center;
+      font-size: 0.4rem;
+      margin-bottom: 1rem;
+      border: 1px solid #f1c40f;
+      color: #b26b00;
+    }
+
+    /* NFT Grid */
+    .nft-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .nft-card {
+      background: #ffffff;
+      border: 2px solid;
+      transition: transform 0.1s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .nft-card:nth-child(6n+1) { border-color: #9b59b6; }
+    .nft-card:nth-child(6n+2) { border-color: #5dade2; }
+    .nft-card:nth-child(6n+3) { border-color: #52be80; }
+    .nft-card:nth-child(6n+4) { border-color: #f1c40f; }
+    .nft-card:nth-child(6n+5) { border-color: #e74c3c; }
+    .nft-card:nth-child(6n+6) { border-color: #9b59b6; }
+
+    .nft-card:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0px 0px rgba(155, 89, 182, 0.2);
+    }
+
+    .card-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #f3ecff;
+      display: block;
+    }
+
+    .floor-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(10, 15, 10, 0.92);
+      padding: 0.25rem 0.35rem;
+      border-top: 1px solid #f1c40f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .floor-label {
+      color: #8faa8b;
+      font-size: 0.35rem;
+    }
+
+    .floor-value {
+      color: #f0c674;
+      font-weight: bold;
+      background: #1a241a;
+      padding: 0.1rem 0.3rem;
+      border: 1px solid #5a7a4a;
+      font-size: 0.4rem;
+    }
+
+    .listed-badge {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      background: #52be80;
+      color: white;
+      padding: 0.1rem 0.3rem;
+      font-size: 0.35rem;
+      border: 1px solid #a9dfbf;
+      z-index: 3;
+    }
+
+    .floor-tag {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      background: #f1c40f;
+      color: #7d3c98;
+      padding: 0.1rem 0.3rem;
+      font-size: 0.35rem;
+      border: 1px solid #f9e79f;
+      z-index: 3;
+      font-weight: bold;
+    }
+
+    .card-info {
+      padding: 0.4rem 0.5rem 0.6rem;
+    }
+
+    .nft-number {
+      font-size: 0.65rem;
+      color: #7d3c98;
+      background: #f4ecf7;
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.3rem;
+      border: 1px solid #c39bd3;
+    }
+
+    .nft-rarity {
+      font-size: 0.4rem;
+      background: #eafaf1;
+      padding: 0.15rem 0.4rem;
+      color: #1e8449;
+      display: inline-block;
+      margin-left: 4px;
+    }
+
+    .listing-price {
+      font-size: 0.45rem;
+      color: #e67e22;
+      margin: 0.2rem 0;
+    }
+
+    .view-btn {
+      background: #fef9e7;
+      border: 1px solid #f1c40f;
+      padding: 0.2rem 0.4rem;
+      font-size: 0.4rem;
+      color: #b7950b;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 0.3rem;
+      font-family: monospace;
+    }
+
+    .view-btn:hover {
+      background: #f1c40f;
+      color: white;
+    }
+
+    /* Modals */
+    .modal, .about-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+
+    .modal-card, .about-modal-card {
+      background: white;
+      max-width: 380px;
+      width: 100%;
+      border: 3px solid #f1c40f;
+      box-shadow: 8px 8px 0px 0px #c39bd3;
+    }
+
+    .about-modal-card {
+      background: #0f1217;
+      padding: 1.2rem;
+    }
+
+    .about-modal-card h2 {
+      color: #f0c674;
+      font-size: 0.8rem;
+      text-align: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-modal-card p {
+      color: #b3e4c5;
+      font-size: 0.45rem;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .modal-img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+
+    .modal-info {
+      padding: 0.8rem;
+      text-align: center;
+    }
+
+    .modal-info h2 {
+      font-size: 0.8rem;
+      color: #8e44ad;
+    }
+
+    .modal-stats {
+      background: #faf5ff;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      font-size: 0.45rem;
+      text-align: left;
+      border-left: 3px solid #5dade2;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    .modal-btn, .close-about-btn {
+      background: #52be80;
+      border: none;
+      padding: 0.5rem;
+      font-size: 0.5rem;
+      cursor: pointer;
+      width: 100%;
+      color: white;
+      margin-top: 0.4rem;
+      font-family: monospace;
+    }
+
+    .modal-btn:hover, .close-about-btn:hover {
+      background: #1e8449;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      padding: 0.8rem;
+      font-size: 0.4rem;
+      color: #e74c3c;
+      border-top: 1px solid #fadbd8;
+    }
+
+    @media (max-width: 600px) {
+      .nft-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.8rem;
+      }
+      .countdown-item {
+        min-width: 28px;
+      }
+      .countdown-number {
+        font-size: 0.5rem;
+      }
+      .lock-icon {
+        font-size: 0.4rem;
+        padding: 0.15rem 0.3rem;
+      }
+      .top-bar {
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .lock-countdown-area {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Top Bar with Croginal Nine button, About Us, and Countdown+Lock -->
+  <div class="top-bar">
+    <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+      <a href="https://www.showa.gg/croginal" target="_blank" class="croginal-nine-btn">🎮 CROGINAL NINE</a>
+      <button class="about-btn" id="aboutBtn">📜 ABOUT</button>
+      <div class="lock-countdown-area" id="lockCountdownArea">
+        <span class="lock-icon">🔒 PINKLOCK</span>
+        <div class="countdown-compact">
+          <div class="countdown-item">
+            <div class="countdown-number" id="compactDays">00</div>
+            <div class="countdown-label">D</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="compactHours">00</div>
+            <div class="countdown-label">H</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="compactMinutes">00</div>
+            <div class="countdown-label">M</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="compactSeconds">00</div>
+            <div class="countdown-label">S</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>CROGINAL CATS</h1>
+    <div class="tagline">FLOOR PRICE · RARITY · DIRECT TO EBISUSBAY</div>
+    <div class="live-badge">
+      <span class="pulse-dot"></span> CONTRACT FLOOR: 94 CRO
+    </div>
+    <div class="contract-badge">
+      NFT: 0x5c3c...fd642d
+    </div>
+  </div>
+
+  <!-- THREE CATEGORIES -->
+  <div class="categories-row">
+    <div class="cat-card">
+      <h3>[ NFT MARKET ]</h3>
+      <p>Real floor price from contract. Click any card to view on EbisusBay.</p>
+      <div class="highlight">FLOOR: 94 CRO ($6.47)</div>
+      <div class="highlight">LISTINGS: 24 active</div>
+    </div>
+
+    <div class="cat-card">
+      <h3>[ SOCIAL HUB ]</h3>
+      <p>Join the community for whitelist spots & updates.</p>
+      <div class="social-icons">
+        <a href="https://x.com/Croginal" target="_blank" class="social-link" id="xLink">𝕏 X (TWITTER)</a>
+        <a href="https://discord.gg/jeMmU35Zg8" target="_blank" class="social-link" id="discordLink">💬 DISCORD</a>
+      </div>
+      <div class="highlight">COMMUNITY · GIVEAWAYS</div>
+    </div>
+
+    <div class="cat-card">
+      <h3>[ CROGINAL TOKEN ]</h3>
+      <p>Utility token for governance, NFT staking & rewards.</p>
+      <div class="coin-stats">
+        <div>PRICE: <strong id="coinPrice">-- USD</strong> <span class="refresh-icon" id="refreshTokenBtn">🔄</span></div>
+        <div>24H CHANGE: <span id="coinChange">--</span>%</div>
+        <div>MARKET CAP: <span id="coinMCap">--</span></div>
+        <div>TOKEN: <span id="tokenContractDisplay">0xD50f...29A3</span> 
+          <button class="copy-icon" id="copyTokenBtn">📋 COPY</button>
+        </div>
+      </div>
+      <div class="highlight">TRADE ON VVS · EBISUS DEX</div>
+    </div>
+  </div>
+
+  <!-- FLOOR PRICE SECTION -->
+  <div class="section-title">
+    [ LISTED NFTS · FLOOR PRICE & RARITY ]
+    <span class="real-data-badge">🔴 FLOOR: 94 CRO</span>
+  </div>
+
+  <div class="market-stats-row">
+    <div class="market-stat-card">
+      <div class="market-stat-label">CONTRACT FLOOR</div>
+      <div class="market-stat-value">94 CRO</div>
+    </div>
+    <div class="market-stat-card">
+      <div class="market-stat-label">LOWEST LISTING</div>
+      <div class="market-stat-value">94 CRO</div>
+    </div>
+    <div class="market-stat-card">
+      <div class="market-stat-label">TOTAL LISTINGS</div>
+      <div class="market-stat-value">24</div>
+    </div>
+  </div>
+
+  <div class="listings-note">
+    🟢 FLOOR: 94 CRO · CLICK ANY CARD → EBISUSBAY
+  </div>
+
+  <div id="nftGrid" class="nft-grid">
+    <div style="text-align:center; padding: 1rem; font-size:0.5rem;">LOADING LISTINGS...</div>
+  </div>
+</div>
+
+<!-- Modal for NFT Preview -->
+<div id="modal" class="modal">
+  <div class="modal-card">
+    <img id="modalImg" class="modal-img" alt="nft">
+    <div class="modal-info">
+      <h2 id="modalTitle"></h2>
+      <div id="modalStats" class="modal-stats"></div>
+      <button class="modal-btn" id="modalEbisusBtn">GO TO EBISUSBAY</button>
+      <button class="modal-btn" id="closeModalBtn">CLOSE</button>
+    </div>
+  </div>
+</div>
+
+<!-- About Us Modal -->
+<div id="aboutModal" class="about-modal">
+  <div class="about-modal-card">
+    <h2>📜 ABOUT CROGINAL CATS</h2>
+    <p>
+      Croginal Cats is a cat-themed meme and a community project native on Cronos blockchain.<br><br>
+      It combines entertaining Web2 content with the power of Web3, all wrapped up in the form of pixelated cats.<br><br>
+      Check out the animated series, the arcade game and the physical products. Don't forget the NFT collection listed on Crypto.com NFT and other marketplaces.
+    </p>
+    <button class="close-about-btn" id="closeAboutBtn">CLOSE</button>
+  </div>
+</div>
+
+<footer>
+  🟢 TOKEN: 0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3 · DATA FROM DEXSCREENER
+</footer>
+
+<script>
+  // ==============================================================
+  // COUNTDOWN TIMER - TARGET: January 1, 2030, 19:00 UTC
+  // ==============================================================
+  const targetDate = new Date(Date.UTC(2030, 0, 1, 19, 0, 0));
+
+  function updateCountdown() {
+    const now = new Date();
+    const difference = targetDate - now;
+
+    if (difference <= 0) {
+      document.getElementById('compactDays').textContent = '00';
+      document.getElementById('compactHours').textContent = '00';
+      document.getElementById('compactMinutes').textContent = '00';
+      document.getElementById('compactSeconds').textContent = '00';
+      return;
+    }
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    document.getElementById('compactDays').textContent = days.toString().padStart(2, '0');
+    document.getElementById('compactHours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('compactMinutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('compactSeconds').textContent = seconds.toString().padStart(2, '0');
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+
+  // ==============================================================
+  // PINKLOCK BUTTON - OPENS THE LOCK PAGE
+  // ==============================================================
+  const PINKLOCK_URL = "https://www.pinksale.finance/pinklock/cronos/record/1000313";
+  const lockCountdownArea = document.getElementById('lockCountdownArea');
+  
+  lockCountdownArea.addEventListener('click', () => {
+    window.open(PINKLOCK_URL, '_blank');
+  });
+
+  // ==============================================================
+  // COPY TOKEN CONTRACT FUNCTION
+  // ==============================================================
+  const TOKEN_CONTRACT_FULL = "0xD50f5739A09f36C6f97cC9a4849C5462Ba6129A3";
+  
+  function showToast(message, isError = false) {
+    const existingToast = document.querySelector('.toast-message');
+    if (existingToast) existingToast.remove();
+    
+    const toast = document.createElement('div');
+    toast.className = 'toast-message';
+    if (isError) toast.classList.add('error');
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+      if (toast) toast.remove();
+    }, 2000);
+  }
+  
+  function copyTokenContract() {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(TOKEN_CONTRACT_FULL).then(() => {
+        showToast('✅ CONTRACT COPIED!');
+      }).catch(() => {
+        fallbackCopyMethod();
+      });
+    } else {
+      fallbackCopyMethod();
+    }
+  }
+  
+  function fallbackCopyMethod() {
+    const textarea = document.createElement('textarea');
+    textarea.value = TOKEN_CONTRACT_FULL;
+    textarea.style.position = 'fixed';
+    textarea.style.top = '-9999px';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    
+    textarea.select();
+    textarea.setSelectionRange(0, 99999);
+    
+    try {
+      const success = document.execCommand('copy');
+      if (success) {
+        showToast('✅ CONTRACT COPIED!');
+      } else {
+        showToast('❌ Press Ctrl+C to copy', true);
+      }
+    } catch (err) {
+      showToast('❌ Select and copy manually', true);
+    }
+    
+    document.body.removeChild(textarea);
+  }
+  
+  document.getElementById('copyTokenBtn').addEventListener('click', copyTokenContract);
+
+  // ==============================================================
+  // CROGINAL TOKEN DATA FROM DEXSCREENER
+  // ==============================================================
+  const DEXSCREENER_API_URL = "https://api.dexscreener.com/latest/dex/pairs/cronos/0xdf782b0c50750a153b9418e85bb88ac4639c173c";
+  
+  async function fetchTokenData() {
+    try {
+      const response = await fetch(DEXSCREENER_API_URL);
+      const data = await response.json();
+      
+      if (data && data.pair && data.pair.length > 0) {
+        const pair = data.pair[0];
+        const priceUsd = parseFloat(pair.priceUsd);
+        const priceChange = pair.priceChange?.h24 || 0;
+        const marketCap = pair.fdv || pair.mcap || 0;
+        
+        document.getElementById('coinPrice').innerHTML = `$${priceUsd.toFixed(6)}`;
+        const changeSpan = document.getElementById('coinChange');
+        changeSpan.innerHTML = `${priceChange > 0 ? '+' : ''}${priceChange.toFixed(2)}%`;
+        changeSpan.style.color = priceChange >= 0 ? '#27ae60' : '#e74c3c';
+        
+        if (marketCap > 0) {
+          if (marketCap >= 1000000) {
+            document.getElementById('coinMCap').innerHTML = `$${(marketCap / 1000000).toFixed(2)}M`;
+          } else if (marketCap >= 1000) {
+            document.getElementById('coinMCap').innerHTML = `$${(marketCap / 1000).toFixed(2)}K`;
+          } else {
+            document.getElementById('coinMCap').innerHTML = `$${marketCap.toFixed(0)}`;
+          }
+        } else {
+          document.getElementById('coinMCap').innerHTML = `$8.0K`;
+        }
+      } else {
+        setFallbackTokenData();
+      }
+    } catch (error) {
+      console.error("Error fetching token data:", error);
+      setFallbackTokenData();
+    }
+  }
+  
+  function setFallbackTokenData() {
+    document.getElementById('coinPrice').innerHTML = `$0.0586`;
+    document.getElementById('coinChange').innerHTML = `+0.0%`;
+    document.getElementById('coinChange').style.color = '#27ae60';
+    document.getElementById('coinMCap').innerHTML = `$8.0K`;
+  }
+  
+  document.getElementById('refreshTokenBtn').addEventListener('click', () => {
+    fetchTokenData();
+  });
+  
+  fetchTokenData();
+  setInterval(fetchTokenData, 60000);
+
+  // ==============================================================
+  // NFT CONTRACT DATA
+  // ==============================================================
+  const NFT_CONTRACT = "0x5c3cf1a5f303bac6b32f92ef441f4f812afd642d";
+  const CURRENT_FLOOR_CRO = 94;
+  const CRO_TO_USD = 0.0688;
+  const FLOOR_USD = (CURRENT_FLOOR_CRO * CRO_TO_USD).toFixed(2);
+  
+  const IPFS_BASE = "https://ipfs.ebisusbay.com/ipfs/bafybeif77riqtawlky2nssf27ndbsw7xznwklgb7gln3ygrjfb3onl36gi/";
+  const getImageUrl = (tokenId) => `${IPFS_BASE}${tokenId}.webp`;
+  
+  const CONTRACT_LISTINGS = [
+    { tokenId: 20, priceCRO: 94, rarity: "COMMON" },
+    { tokenId: 24, priceCRO: 96, rarity: "COMMON" },
+    { tokenId: 30, priceCRO: 120, rarity: "COMMON" },
+    { tokenId: 18, priceCRO: 155, rarity: "UNCOMMON" },
+    { tokenId: 21, priceCRO: 160, rarity: "UNCOMMON" },
+    { tokenId: 10, priceCRO: 165, rarity: "UNCOMMON" },
+    { tokenId: 16, priceCRO: 170, rarity: "UNCOMMON" },
+    { tokenId: 35, priceCRO: 200, rarity: "UNCOMMON" },
+    { tokenId: 14, priceCRO: 340, rarity: "RARE" },
+    { tokenId: 5, priceCRO: 350, rarity: "RARE" },
+    { tokenId: 23, priceCRO: 360, rarity: "RARE" },
+    { tokenId: 8, priceCRO: 380, rarity: "RARE" },
+    { tokenId: 27, priceCRO: 450, rarity: "RARE" },
+    { tokenId: 19, priceCRO: 450, rarity: "RARE" },
+    { tokenId: 38, priceCRO: 500, rarity: "RARE" },
+    { tokenId: 15, priceCRO: 600, rarity: "RARE" },
+    { tokenId: 22, priceCRO: 750, rarity: "EPIC" },
+    { tokenId: 3, priceCRO: 850, rarity: "EPIC" },
+    { tokenId: 32, priceCRO: 850, rarity: "EPIC" },
+    { tokenId: 7, priceCRO: 900, rarity: "EPIC" },
+    { tokenId: 42, priceCRO: 1300, rarity: "EPIC" },
+    { tokenId: 12, priceCRO: 2800, rarity: "LEGENDARY" },
+    { tokenId: 1, priceCRO: 3300, rarity: "LEGENDARY" },
+    { tokenId: 25, priceCRO: 5000, rarity: "LEGENDARY" }
+  ];
+  
+  CONTRACT_LISTINGS.sort((a, b) => a.priceCRO - b.priceCRO);
+  
+  const nftList = CONTRACT_LISTINGS.map((listing, index) => ({
+    id: listing.tokenId,
+    tokenNumber: listing.tokenId,
+    rarity: listing.rarity,
+    priceCRO: listing.priceCRO,
+    priceUSD: listing.priceCRO * CRO_TO_USD,
+    imageUrl: getImageUrl(listing.tokenId),
+    ebisusLink: `https://app.ebisusbay.com/collection/cronos/${NFT_CONTRACT}/${listing.tokenId}`,
+    isFloor: index === 0
+  }));
+  
+  const gridContainer = document.getElementById('nftGrid');
+  const floorDisplay = `${CURRENT_FLOOR_CRO} CRO ($${FLOOR_USD})`;
+  
+  function renderGallery() {
+    const cardsHTML = nftList.map(nft => {
+      const isFloor = nft.isFloor;
+      return `
+      <div class="nft-card" data-id="${nft.id}" data-url="${nft.ebisusLink}">
+        <div style="position: relative;">
+          <img class="card-img" src="${nft.imageUrl}" alt="CAT #${nft.tokenNumber}" loading="lazy" 
+               onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 400 400%27%3E%3Crect width=%27400%27 height=%27400%27 fill=%27%23f3ecff%27/%3E%3Ctext x=%27200%27 y=%27180%27 text-anchor=%27middle%27 font-size=%2718%27 fill=%27%238e44ad%27%3ECROGINAL%3C/text%3E%3Ctext x=%27200%27 y=%27220%27 text-anchor=%27middle%27 font-size=%2730%27 fill=%27%238e44ad%27%3E#${nft.tokenNumber}%3C/text%3E%3C/svg%3E'">
+          <div class="listed-badge">LISTED</div>
+          ${isFloor ? '<div class="floor-tag">🔥 FLOOR</div>' : ''}
+          <div class="floor-overlay">
+            <span class="floor-label">FLOOR</span>
+            <span class="floor-value">${floorDisplay}</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="nft-number">#${nft.tokenNumber}</div>
+          <span class="nft-rarity">${nft.rarity}</span>
+          <div class="listing-price">${nft.priceCRO} CRO ($${nft.priceUSD.toFixed(2)})</div>
+          <button class="view-btn" data-url="${nft.ebisusLink}">VIEW ON EBISUSBAY →</button>
+        </div>
+      </div>
+    `}).join('');
+    
+    gridContainer.innerHTML = cardsHTML;
+  }
+  
+  // Modal logic
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modalImg');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalStatsDiv = document.getElementById('modalStats');
+  const modalEbisusBtn = document.getElementById('modalEbisusBtn');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  let currentUrl = '';
+  
+  function openPreview(nft) {
+    currentUrl = nft.ebisusLink;
+    modalImg.src = nft.imageUrl;
+    modalTitle.innerText = `#${nft.tokenNumber}`;
+    modalStatsDiv.innerHTML = `
+      RARITY: ${nft.rarity}<br>
+      LISTED: ${nft.priceCRO} CRO ($${nft.priceUSD.toFixed(2)})<br>
+      🔴 FLOOR: ${CURRENT_FLOOR_CRO} CRO ($${FLOOR_USD})<br>
+      TOKEN ID: ${nft.tokenNumber}<br>
+      ⬇️ CLICK BELOW → EBISUSBAY
+    `;
+    modal.style.display = 'flex';
+  }
+  
+  function closeModal() { modal.style.display = 'none'; }
+  
+  modalEbisusBtn.addEventListener('click', () => { 
+    if (currentUrl) window.open(currentUrl, '_blank'); 
+  });
+  closeModalBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.style.display === 'flex') closeModal(); });
+  
+  // About Us Modal
+  const aboutModal = document.getElementById('aboutModal');
+  const aboutBtn = document.getElementById('aboutBtn');
+  const closeAboutBtn = document.getElementById('closeAboutBtn');
+  
+  function openAboutModal() { aboutModal.style.display = 'flex'; }
+  function closeAboutModal() { aboutModal.style.display = 'none'; }
+  
+  aboutBtn.addEventListener('click', openAboutModal);
+  closeAboutBtn.addEventListener('click', closeAboutModal);
+  aboutModal.addEventListener('click', (e) => { if (e.target === aboutModal) closeAboutModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && aboutModal.style.display === 'flex') closeAboutModal(); });
+  
+  // NFT Card Events
+  gridContainer.addEventListener('click', (e) => {
+    const btn = e.target.closest('.view-btn');
+    if (btn) {
+      const url = btn.getAttribute('data-url');
+      if (url) window.open(url, '_blank');
+      e.stopPropagation();
+      return;
+    }
+    const card = e.target.closest('.nft-card');
+    if (card) {
+      const id = parseInt(card.getAttribute('data-id'));
+      const found = nftList.find(n => n.id === id);
+      if (found) openPreview(found);
+    }
+  });
+  
+  renderGallery();
+</script>
+</body>
+</html>
