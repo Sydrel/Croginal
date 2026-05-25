@@ -4,7 +4,7 @@
 
 > A retro-pixel NFT gallery showing real-time floor prices, rarity tiers, and direct links to EbisusBay listings for the Croginal Cats collection on Cronos blockchain.
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?style=for-the-badge&logo=github)](https://YOUR_USERNAME.github.io/croginal-cats-nft/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?style=for-the-badge&logo=github)](https://sydrel.github.io/Croginal/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Cronos](https://img.shields.io/badge/Chain-Cronos-3b3b3b?style=for-the-badge&logo=cronos)](https://cronos.org/)
 [![EbisusBay](https://img.shields.io/badge/Marketplace-EbisusBay-orange?style=for-the-badge)](https://app.ebisusbay.com/collection/cronos/0x5c3cf1a5f303bac6b32f92ef441f4f812afd642d)
@@ -39,7 +39,7 @@
 - **Live token price data** for the Croginal token from DexScreener
 - **Countdown timer** and PinkLock integration
 
-The project combines entertaining Web2 content with the power of Web3, all wrapped up in the form of pixelated cats.
+The project combines entertaining Web2 content with the power of Web3, all wrapped up in the form of pixelated cats. Check out the animated series, the arcade game and the physical products. Don't forget the NFT collection listed on Crypto.com NFT and other marketplaces.
 
 ---
 
@@ -61,4 +61,6 @@ The project combines entertaining Web2 content with the power of Web3, all wrapp
 
 ## 🌐 Live Demo
 
-The website is hosted on GitHub Pages and can be accessed at:
+The website is live and can be accessed at: <a href="https://sydrel.github.io/Croginal/" target="_blank" style="color: #0366d6; text-decoration: underline; font-size: 0.6rem;">
+  🔗 https://sydrel.github.io/Croginal/
+</a>
